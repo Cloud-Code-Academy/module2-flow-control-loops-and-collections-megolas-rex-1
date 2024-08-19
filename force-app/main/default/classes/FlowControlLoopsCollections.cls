@@ -238,6 +238,7 @@ String result = '';
      */
     public static List<Integer> createAndPopulateList() {
         // Create a new list of integers
+        List<Integer> integerList = new List <Integer>();
 
         // Add the integers 1, 2, and 3 to the list
         integerList.add(1);
