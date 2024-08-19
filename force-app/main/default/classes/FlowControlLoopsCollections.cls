@@ -190,13 +190,13 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
-String result = '';
+String helloWorld ='';
         // Use a for loop to append 'Hello World!;' to the result string three times
-        for (Integer i = 0; i < 3; i++) {
-            result += 'Hello World!;';
+        for (Integer i = 1; i <= 3; i++) {
+            helloworld += 'Hello World!; ';
         }
     
-        return result.trim(); // Return the constructed string
+        return helloWorld; // Return the constructed string
     }
 
     /**
@@ -210,24 +210,14 @@ String result = '';
      * @return The new string with the inputString repeated repeatCount times.
      */
     public static String repeatString(String inputString, Integer repeatCount) {
-        if (inputString == null || repeatCount == null || repeatCount <= 0) {
-            return ''; // Handle edge cases where input is invalid
-        }
-    
-        String result = ''; // Initialize the result string
-    
-        // Use a for loop to append the inputString to the result string repeatCount times
-        for (Integer i = 0; i < repeatCount; i++) {
-            result += inputString;
-    
-            // If it is not the last iteration, add a semicolon to separate the strings
-            if (i < repeatCount - 1) {
-                result += ';';
+        String repeatHelloWorld = '';
+        for(Integer counter = 1; counter <= repeatCount; counter++){
+            repeatHelloWorld += inputString;
+            if (counter < repeatCount){
+                repeatHelloWorld += '; ';
             }
         }
-    
-        // Return the final result string
-        return result;
+        return repeatHelloWorld; // Replace null with the variable you used to store the result
     }
 
     /**
@@ -260,7 +250,7 @@ String result = '';
         List<Integer> numberList = new List<Integer>{1, 2, 3, 4, 5}; //DO NOT CHANGE
 
         // Remove the 3rd element (number 3) from the list
-        numberList.remove(Integer.valueOf());
+        numberList.remove(Integer.valueOf(2));
         
         // Return the updated list
         return numberList; // Replace null with the variable you used to store the result
