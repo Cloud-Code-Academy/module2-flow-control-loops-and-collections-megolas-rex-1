@@ -105,7 +105,7 @@ public with sharing class FlowControlLoopsCollections {
         if (a == null) {
             return null;
         }
-        if ( a / 2 == 0) {
+        if (Math.mod(a, 2) == 0) {
             return 'Even';
         } else {
             return 'Odd';
@@ -222,7 +222,7 @@ String result = '';
     
             // If it is not the last iteration, add a semicolon to separate the strings
             if (i < repeatCount - 1) {
-                result += '; ';
+                result += ';';
             }
         }
     
@@ -260,7 +260,7 @@ String result = '';
         List<Integer> numberList = new List<Integer>{1, 2, 3, 4, 5}; //DO NOT CHANGE
 
         // Remove the 3rd element (number 3) from the list
-        numberList.remove(Integer.valueOf(3));
+        numberList.remove(Integer.valueOf(2));
         
         // Return the updated list
         return numberList; // Replace null with the variable you used to store the result
