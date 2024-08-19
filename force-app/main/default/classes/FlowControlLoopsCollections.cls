@@ -317,9 +317,9 @@ for (String str : inputList) {stringSet.add (str);
 
         // Loop through the list of integers
             // if the number is negative skip this iteration
-        for (Integer number : numbers) {
-            if (number > 0) {
-                sum += number;
+        for (Integer posnumber : numbers) {
+            if (posnumber > 0) {
+                sum += posnumber;
             }
         }
 
