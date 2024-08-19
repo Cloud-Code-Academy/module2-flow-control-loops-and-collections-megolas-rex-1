@@ -122,19 +122,16 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String checkString(String a) {
         if (a == null) {
-            return null;
+            return 'Null';
         }
-        if (a == ' ') {
+        if (a.trim() == '') {
             return 'Empty';
         } else {
             return 'Contains Text';
         }
-        
-        return null;
     }
 
-    /**
-     * Question 7
+     /* Question 7
      * Determines the grade based on the score.
      * Grade A if score is greater than or equal to 90.
      * Grade B if score is greater than or equal to 80.
@@ -193,13 +190,13 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
-
+String result = '';
         // Use a for loop to append 'Hello World!;' to the result string three times
         for (Integer i = 0; i < 3; i++) {
             result += 'Hello World!; ';
         }
     
-        return result; // Return the constructed string
+        return result.trim(); // Return the constructed string
     }
 
     /**
