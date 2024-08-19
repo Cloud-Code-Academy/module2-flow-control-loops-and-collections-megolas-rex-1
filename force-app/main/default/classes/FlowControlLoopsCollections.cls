@@ -169,7 +169,7 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer sumUpToLimit(Integer intLimit) {
         if (intLimit == null || intLimit < 1) {
-            return null;
+            return 0;
         }
     
         Integer sum = 0; // Initialize the sum variable
@@ -193,7 +193,7 @@ public with sharing class FlowControlLoopsCollections {
 String result = '';
         // Use a for loop to append 'Hello World!;' to the result string three times
         for (Integer i = 0; i < 3; i++) {
-            result += 'Hello World!; ';
+            result += 'Hello World!;';
         }
     
         return result.trim(); // Return the constructed string
@@ -260,7 +260,7 @@ String result = '';
         List<Integer> numberList = new List<Integer>{1, 2, 3, 4, 5}; //DO NOT CHANGE
 
         // Remove the 3rd element (number 3) from the list
-        numberList.remove(Integer.valueOf(2));
+        numberList.remove(Integer.valueOf());
         
         // Return the updated list
         return numberList; // Replace null with the variable you used to store the result
